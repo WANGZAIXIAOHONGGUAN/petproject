@@ -1,0 +1,228 @@
+{
+  "checkpoint": "best_model_label_smoothing.pth",
+  "test_size": 1103,
+  "random_aug_test": false,
+  "repeats": 1,
+  "per_run": [
+    {
+      "top1_acc": 0.9238440616500453,
+      "top5_acc": 0.985494106980961,
+      "macro_f1": 0.9233109610924565
+    }
+  ],
+  "top1_acc": 0.9238440616500453,
+  "top5_acc": 0.985494106980961,
+  "macro_f1": 0.9233109610924565,
+  "top1_std": 0.0,
+  "top1_min": 0.9238440616500453,
+  "top1_max": 0.9238440616500453,
+  "median_class_recall": 0.9333333333333333,
+  "per_class_f1": {
+    "Abyssinian": 0.9152542372881356,
+    "American Bulldog": 0.8679245283018868,
+    "American Pit Bull Terrier": 0.7058823529411765,
+    "Basset Hound": 0.9180327868852459,
+    "Beagle": 0.9122807017543859,
+    "Bengal": 0.8333333333333334,
+    "Birman": 0.9354838709677419,
+    "Bombay": 0.9454545454545454,
+    "Boxer": 0.9333333333333333,
+    "British Shorthair": 0.8928571428571429,
+    "Chihuahua": 0.9122807017543859,
+    "Egyptian Mau": 0.847457627118644,
+    "English Cocker Spaniel": 1.0,
+    "English Setter": 0.9655172413793104,
+    "German Shorthaired": 0.9491525423728814,
+    "Great Pyrenees": 0.9666666666666667,
+    "Havanese": 0.9122807017543859,
+    "Japanese Chin": 1.0,
+    "Keeshond": 0.9473684210526315,
+    "Leonberger": 0.9508196721311475,
+    "Maine Coon": 0.9310344827586207,
+    "Miniature Pinscher": 0.8529411764705882,
+    "Newfoundland": 0.9836065573770492,
+    "Persian": 0.9666666666666667,
+    "Pomeranian": 0.9666666666666667,
+    "Pug": 1.0,
+    "Ragdoll": 0.8620689655172413,
+    "Russian Blue": 0.9180327868852459,
+    "Saint Bernard": 0.9508196721311475,
+    "Samoyed": 0.9523809523809523,
+    "Scottish Terrier": 0.9333333333333333,
+    "Shiba Inu": 0.9122807017543859,
+    "Siamese": 0.9508196721311475,
+    "Sphynx": 0.967741935483871,
+    "Staffordshire Bull Terrier": 0.782608695652174,
+    "Wheaten Terrier": 0.9523809523809523,
+    "Yorkshire Terrier": 0.967741935483871
+  },
+  "per_class_recall": {
+    "Abyssinian": 0.9,
+    "American Bulldog": 0.7666666666666667,
+    "American Pit Bull Terrier": 0.6,
+    "Basset Hound": 0.9333333333333333,
+    "Beagle": 0.8666666666666667,
+    "Bengal": 0.8333333333333334,
+    "Birman": 0.9666666666666667,
+    "Bombay": 0.9629629629629629,
+    "Boxer": 0.9333333333333333,
+    "British Shorthair": 0.8333333333333334,
+    "Chihuahua": 0.8666666666666667,
+    "Egyptian Mau": 0.8928571428571429,
+    "English Cocker Spaniel": 1.0,
+    "English Setter": 0.9333333333333333,
+    "German Shorthaired": 0.9333333333333333,
+    "Great Pyrenees": 0.9666666666666667,
+    "Havanese": 0.8666666666666667,
+    "Japanese Chin": 1.0,
+    "Keeshond": 0.9,
+    "Leonberger": 0.9666666666666667,
+    "Maine Coon": 0.9,
+    "Miniature Pinscher": 0.9666666666666667,
+    "Newfoundland": 1.0,
+    "Persian": 0.9666666666666667,
+    "Pomeranian": 0.9666666666666667,
+    "Pug": 1.0,
+    "Ragdoll": 0.8333333333333334,
+    "Russian Blue": 0.9333333333333333,
+    "Saint Bernard": 0.9666666666666667,
+    "Samoyed": 1.0,
+    "Scottish Terrier": 0.9333333333333333,
+    "Shiba Inu": 0.8666666666666667,
+    "Siamese": 0.9666666666666667,
+    "Sphynx": 1.0,
+    "Staffordshire Bull Terrier": 0.9642857142857143,
+    "Wheaten Terrier": 1.0,
+    "Yorkshire Terrier": 1.0
+  },
+  "lowest_recall_classes": [
+    {
+      "class": "American Pit Bull Terrier",
+      "recall": 0.6,
+      "f1": 0.7058823529411765
+    },
+    {
+      "class": "American Bulldog",
+      "recall": 0.7666666666666667,
+      "f1": 0.8679245283018868
+    },
+    {
+      "class": "Bengal",
+      "recall": 0.8333333333333334,
+      "f1": 0.8333333333333334
+    },
+    {
+      "class": "British Shorthair",
+      "recall": 0.8333333333333334,
+      "f1": 0.8928571428571429
+    },
+    {
+      "class": "Ragdoll",
+      "recall": 0.8333333333333334,
+      "f1": 0.8620689655172413
+    }
+  ],
+  "worst_classes": [
+    {
+      "class": "American Pit Bull Terrier",
+      "f1": 0.7058823529411765
+    },
+    {
+      "class": "Staffordshire Bull Terrier",
+      "f1": 0.782608695652174
+    },
+    {
+      "class": "Bengal",
+      "f1": 0.8333333333333334
+    },
+    {
+      "class": "Egyptian Mau",
+      "f1": 0.847457627118644
+    },
+    {
+      "class": "Miniature Pinscher",
+      "f1": 0.8529411764705882
+    }
+  ],
+  "best_classes": [
+    {
+      "class": "Pug",
+      "f1": 1.0
+    },
+    {
+      "class": "Japanese Chin",
+      "f1": 1.0
+    },
+    {
+      "class": "English Cocker Spaniel",
+      "f1": 1.0
+    },
+    {
+      "class": "Newfoundland",
+      "f1": 0.9836065573770492
+    },
+    {
+      "class": "Yorkshire Terrier",
+      "f1": 0.967741935483871
+    }
+  ],
+  "top_confused_pairs": [
+    {
+      "pair": [
+        "American Pit Bull Terrier",
+        "Staffordshire Bull Terrier"
+      ],
+      "count": 9,
+      "American Pit Bull Terrier->Staffordshire Bull Terrier": 8,
+      "Staffordshire Bull Terrier->American Pit Bull Terrier": 1
+    },
+    {
+      "pair": [
+        "Bengal",
+        "Egyptian Mau"
+      ],
+      "count": 8,
+      "Bengal->Egyptian Mau": 5,
+      "Egyptian Mau->Bengal": 3
+    },
+    {
+      "pair": [
+        "American Bulldog",
+        "Staffordshire Bull Terrier"
+      ],
+      "count": 4,
+      "American Bulldog->Staffordshire Bull Terrier": 4,
+      "Staffordshire Bull Terrier->American Bulldog": 0
+    },
+    {
+      "pair": [
+        "American Pit Bull Terrier",
+        "Miniature Pinscher"
+      ],
+      "count": 3,
+      "American Pit Bull Terrier->Miniature Pinscher": 2,
+      "Miniature Pinscher->American Pit Bull Terrier": 1
+    },
+    {
+      "pair": [
+        "Birman",
+        "Ragdoll"
+      ],
+      "count": 3,
+      "Birman->Ragdoll": 1,
+      "Ragdoll->Birman": 2
+    }
+  ],
+  "gradcam": {
+    "correct": {
+      "true": "Egyptian Mau",
+      "pred": "Egyptian Mau",
+      "confidence": 0.9958
+    },
+    "wrong": {
+      "true": "Bengal",
+      "pred": "Egyptian Mau",
+      "confidence": 0.9661
+    }
+  }
+}

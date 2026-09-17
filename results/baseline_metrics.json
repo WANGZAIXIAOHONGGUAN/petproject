@@ -1,0 +1,211 @@
+{
+  "checkpoint": "best_model_baseline.pth",
+  "test_size": 1103,
+  "random_aug_test": false,
+  "repeats": 1,
+  "per_run": [
+    {
+      "top1_acc": 0.9029918404351768,
+      "top5_acc": 0.9900271985494107,
+      "macro_f1": 0.9027366926432799
+    }
+  ],
+  "top1_acc": 0.9029918404351768,
+  "top5_acc": 0.9900271985494107,
+  "macro_f1": 0.9027366926432799,
+  "top1_std": 0.0,
+  "top1_min": 0.9029918404351768,
+  "top1_max": 0.9029918404351768,
+  "median_class_recall": 0.9285714285714286,
+  "per_class_f1": {
+    "Abyssinian": 0.8771929824561403,
+    "American Bulldog": 0.8620689655172413,
+    "American Pit Bull Terrier": 0.7,
+    "Basset Hound": 0.896551724137931,
+    "Beagle": 0.9333333333333333,
+    "Bengal": 0.78125,
+    "Birman": 0.9473684210526315,
+    "Bombay": 0.9629629629629629,
+    "Boxer": 0.8235294117647058,
+    "British Shorthair": 0.8709677419354839,
+    "Chihuahua": 0.8275862068965517,
+    "Egyptian Mau": 0.847457627118644,
+    "English Cocker Spaniel": 0.9666666666666667,
+    "English Setter": 0.9666666666666667,
+    "German Shorthaired": 0.967741935483871,
+    "Great Pyrenees": 0.9285714285714286,
+    "Havanese": 0.8727272727272727,
+    "Japanese Chin": 0.9836065573770492,
+    "Keeshond": 0.9655172413793104,
+    "Leonberger": 0.9508196721311475,
+    "Maine Coon": 0.9285714285714286,
+    "Miniature Pinscher": 0.8888888888888888,
+    "Newfoundland": 0.967741935483871,
+    "Persian": 0.8709677419354839,
+    "Pomeranian": 0.9836065573770492,
+    "Pug": 1.0,
+    "Ragdoll": 0.7796610169491526,
+    "Russian Blue": 0.8214285714285714,
+    "Saint Bernard": 0.9206349206349206,
+    "Samoyed": 0.9375,
+    "Scottish Terrier": 0.9206349206349206,
+    "Shiba Inu": 0.8813559322033898,
+    "Siamese": 0.9375,
+    "Sphynx": 0.9655172413793104,
+    "Staffordshire Bull Terrier": 0.8,
+    "Wheaten Terrier": 0.9122807017543859,
+    "Yorkshire Terrier": 0.9523809523809523
+  },
+  "per_class_recall": {
+    "Abyssinian": 0.8333333333333334,
+    "American Bulldog": 0.8333333333333334,
+    "American Pit Bull Terrier": 0.7,
+    "Basset Hound": 0.8666666666666667,
+    "Beagle": 0.9333333333333333,
+    "Bengal": 0.8333333333333334,
+    "Birman": 0.9,
+    "Bombay": 0.9629629629629629,
+    "Boxer": 0.7,
+    "British Shorthair": 0.9,
+    "Chihuahua": 0.8,
+    "Egyptian Mau": 0.8928571428571429,
+    "English Cocker Spaniel": 0.9666666666666667,
+    "English Setter": 0.9666666666666667,
+    "German Shorthaired": 1.0,
+    "Great Pyrenees": 0.8666666666666667,
+    "Havanese": 0.8,
+    "Japanese Chin": 1.0,
+    "Keeshond": 0.9333333333333333,
+    "Leonberger": 0.9666666666666667,
+    "Maine Coon": 0.8666666666666667,
+    "Miniature Pinscher": 0.9333333333333333,
+    "Newfoundland": 1.0,
+    "Persian": 0.9,
+    "Pomeranian": 1.0,
+    "Pug": 1.0,
+    "Ragdoll": 0.7666666666666667,
+    "Russian Blue": 0.7666666666666667,
+    "Saint Bernard": 0.9666666666666667,
+    "Samoyed": 1.0,
+    "Scottish Terrier": 0.9666666666666667,
+    "Shiba Inu": 0.8666666666666667,
+    "Siamese": 1.0,
+    "Sphynx": 0.9333333333333333,
+    "Staffordshire Bull Terrier": 0.9285714285714286,
+    "Wheaten Terrier": 0.8666666666666667,
+    "Yorkshire Terrier": 1.0
+  },
+  "lowest_recall_classes": [
+    {
+      "class": "American Pit Bull Terrier",
+      "recall": 0.7,
+      "f1": 0.7
+    },
+    {
+      "class": "Boxer",
+      "recall": 0.7,
+      "f1": 0.8235294117647058
+    },
+    {
+      "class": "Ragdoll",
+      "recall": 0.7666666666666667,
+      "f1": 0.7796610169491526
+    },
+    {
+      "class": "Russian Blue",
+      "recall": 0.7666666666666667,
+      "f1": 0.8214285714285714
+    },
+    {
+      "class": "Chihuahua",
+      "recall": 0.8,
+      "f1": 0.8275862068965517
+    }
+  ],
+  "best_classes": [
+    {
+      "class": "Pug",
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    {
+      "class": "Japanese Chin",
+      "recall": 1.0,
+      "f1": 0.9836065573770492
+    },
+    {
+      "class": "Pomeranian",
+      "recall": 1.0,
+      "f1": 0.9836065573770492
+    },
+    {
+      "class": "German Shorthaired",
+      "recall": 1.0,
+      "f1": 0.967741935483871
+    },
+    {
+      "class": "Newfoundland",
+      "recall": 1.0,
+      "f1": 0.967741935483871
+    }
+  ],
+  "top_confused_pairs": [
+    {
+      "pair": [
+        "Bengal",
+        "Egyptian Mau"
+      ],
+      "count": 8,
+      "Bengal->Egyptian Mau": 5,
+      "Egyptian Mau->Bengal": 3
+    },
+    {
+      "pair": [
+        "American Pit Bull Terrier",
+        "Staffordshire Bull Terrier"
+      ],
+      "count": 7,
+      "American Pit Bull Terrier->Staffordshire Bull Terrier": 5,
+      "Staffordshire Bull Terrier->American Pit Bull Terrier": 2
+    },
+    {
+      "pair": [
+        "British Shorthair",
+        "Russian Blue"
+      ],
+      "count": 7,
+      "British Shorthair->Russian Blue": 2,
+      "Russian Blue->British Shorthair": 5
+    },
+    {
+      "pair": [
+        "Persian",
+        "Ragdoll"
+      ],
+      "count": 6,
+      "Persian->Ragdoll": 2,
+      "Ragdoll->Persian": 4
+    },
+    {
+      "pair": [
+        "Abyssinian",
+        "Bengal"
+      ],
+      "count": 4,
+      "Abyssinian->Bengal": 4,
+      "Bengal->Abyssinian": 0
+    }
+  ],
+  "gradcam": {
+    "correct": {
+      "true": "English Cocker Spaniel",
+      "pred": "English Cocker Spaniel",
+      "confidence": 1.0
+    },
+    "wrong": {
+      "true": "Maine Coon",
+      "pred": "Bengal",
+      "confidence": 0.9967
+    }
+  }
+}

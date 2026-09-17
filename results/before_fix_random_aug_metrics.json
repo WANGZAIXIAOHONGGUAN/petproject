@@ -1,0 +1,248 @@
+{
+  "checkpoint": "best_model_baseline.pth",
+  "test_size": 1103,
+  "random_aug_test": true,
+  "repeats": 5,
+  "per_run": [
+    {
+      "top1_acc": 0.898458748866727,
+      "top5_acc": 0.9827742520398912,
+      "macro_f1": 0.8983426212913046
+    },
+    {
+      "top1_acc": 0.8902991840435177,
+      "top5_acc": 0.9891205802357208,
+      "macro_f1": 0.8901088738639608
+    },
+    {
+      "top1_acc": 0.8884859474161378,
+      "top5_acc": 0.986400725294651,
+      "macro_f1": 0.8886553759347691
+    },
+    {
+      "top1_acc": 0.898458748866727,
+      "top5_acc": 0.9891205802357208,
+      "macro_f1": 0.8983628160704903
+    },
+    {
+      "top1_acc": 0.8966455122393472,
+      "top5_acc": 0.9918404351767905,
+      "macro_f1": 0.8968924681121833
+    }
+  ],
+  "top1_acc": 0.8944696282864915,
+  "top5_acc": 0.9878513145965548,
+  "macro_f1": 0.8944724310545416,
+  "top1_std": 0.004236925274904009,
+  "top1_min": 0.8884859474161378,
+  "top1_max": 0.898458748866727,
+  "median_class_recall": 0.9,
+  "per_class_f1": {
+    "Abyssinian": 0.8666666666666667,
+    "American Bulldog": 0.8813559322033898,
+    "American Pit Bull Terrier": 0.6875,
+    "Basset Hound": 0.8888888888888888,
+    "Beagle": 0.847457627118644,
+    "Bengal": 0.8125,
+    "Birman": 0.9310344827586207,
+    "Bombay": 0.9629629629629629,
+    "Boxer": 0.8461538461538461,
+    "British Shorthair": 0.9,
+    "Chihuahua": 0.8571428571428571,
+    "Egyptian Mau": 0.8771929824561403,
+    "English Cocker Spaniel": 0.9180327868852459,
+    "English Setter": 0.9508196721311475,
+    "German Shorthaired": 0.9310344827586207,
+    "Great Pyrenees": 0.8679245283018868,
+    "Havanese": 0.8571428571428571,
+    "Japanese Chin": 0.967741935483871,
+    "Keeshond": 0.9655172413793104,
+    "Leonberger": 0.9836065573770492,
+    "Maine Coon": 0.8928571428571429,
+    "Miniature Pinscher": 0.9354838709677419,
+    "Newfoundland": 0.9836065573770492,
+    "Persian": 0.9,
+    "Pomeranian": 0.9666666666666667,
+    "Pug": 0.9666666666666667,
+    "Ragdoll": 0.7931034482758621,
+    "Russian Blue": 0.8571428571428571,
+    "Saint Bernard": 0.9180327868852459,
+    "Samoyed": 0.9090909090909091,
+    "Scottish Terrier": 0.9180327868852459,
+    "Shiba Inu": 0.9,
+    "Siamese": 0.9206349206349206,
+    "Sphynx": 0.9655172413793104,
+    "Staffordshire Bull Terrier": 0.7384615384615385,
+    "Wheaten Terrier": 0.8666666666666667,
+    "Yorkshire Terrier": 0.9523809523809523
+  },
+  "per_class_recall": {
+    "Abyssinian": 0.8666666666666667,
+    "American Bulldog": 0.8666666666666667,
+    "American Pit Bull Terrier": 0.7333333333333333,
+    "Basset Hound": 0.9333333333333333,
+    "Beagle": 0.8333333333333334,
+    "Bengal": 0.8666666666666667,
+    "Birman": 0.9,
+    "Bombay": 0.9629629629629629,
+    "Boxer": 0.7333333333333333,
+    "British Shorthair": 0.9,
+    "Chihuahua": 0.8,
+    "Egyptian Mau": 0.8928571428571429,
+    "English Cocker Spaniel": 0.9333333333333333,
+    "English Setter": 0.9666666666666667,
+    "German Shorthaired": 0.9,
+    "Great Pyrenees": 0.7666666666666667,
+    "Havanese": 0.8,
+    "Japanese Chin": 1.0,
+    "Keeshond": 0.9333333333333333,
+    "Leonberger": 1.0,
+    "Maine Coon": 0.8333333333333334,
+    "Miniature Pinscher": 0.9666666666666667,
+    "Newfoundland": 1.0,
+    "Persian": 0.9,
+    "Pomeranian": 0.9666666666666667,
+    "Pug": 0.9666666666666667,
+    "Ragdoll": 0.7666666666666667,
+    "Russian Blue": 0.8,
+    "Saint Bernard": 0.9333333333333333,
+    "Samoyed": 1.0,
+    "Scottish Terrier": 0.9333333333333333,
+    "Shiba Inu": 0.9,
+    "Siamese": 0.9666666666666667,
+    "Sphynx": 0.9333333333333333,
+    "Staffordshire Bull Terrier": 0.8571428571428571,
+    "Wheaten Terrier": 0.8666666666666667,
+    "Yorkshire Terrier": 1.0
+  },
+  "lowest_recall_classes": [
+    {
+      "class": "American Pit Bull Terrier",
+      "recall": 0.7333333333333333,
+      "f1": 0.6875
+    },
+    {
+      "class": "Boxer",
+      "recall": 0.7333333333333333,
+      "f1": 0.8461538461538461
+    },
+    {
+      "class": "Great Pyrenees",
+      "recall": 0.7666666666666667,
+      "f1": 0.8679245283018868
+    },
+    {
+      "class": "Ragdoll",
+      "recall": 0.7666666666666667,
+      "f1": 0.7931034482758621
+    },
+    {
+      "class": "Chihuahua",
+      "recall": 0.8,
+      "f1": 0.8571428571428571
+    }
+  ],
+  "worst_classes": [
+    {
+      "class": "American Pit Bull Terrier",
+      "f1": 0.6875
+    },
+    {
+      "class": "Staffordshire Bull Terrier",
+      "f1": 0.7384615384615385
+    },
+    {
+      "class": "Ragdoll",
+      "f1": 0.7931034482758621
+    },
+    {
+      "class": "Bengal",
+      "f1": 0.8125
+    },
+    {
+      "class": "Boxer",
+      "f1": 0.8461538461538461
+    }
+  ],
+  "best_classes": [
+    {
+      "class": "Leonberger",
+      "f1": 0.9836065573770492
+    },
+    {
+      "class": "Newfoundland",
+      "f1": 0.9836065573770492
+    },
+    {
+      "class": "Japanese Chin",
+      "f1": 0.967741935483871
+    },
+    {
+      "class": "Pug",
+      "f1": 0.9666666666666667
+    },
+    {
+      "class": "Pomeranian",
+      "f1": 0.9666666666666667
+    }
+  ],
+  "top_confused_pairs": [
+    {
+      "pair": [
+        "American Pit Bull Terrier",
+        "Staffordshire Bull Terrier"
+      ],
+      "count": 9,
+      "American Pit Bull Terrier->Staffordshire Bull Terrier": 5,
+      "Staffordshire Bull Terrier->American Pit Bull Terrier": 4
+    },
+    {
+      "pair": [
+        "Bengal",
+        "Egyptian Mau"
+      ],
+      "count": 6,
+      "Bengal->Egyptian Mau": 3,
+      "Egyptian Mau->Bengal": 3
+    },
+    {
+      "pair": [
+        "British Shorthair",
+        "Russian Blue"
+      ],
+      "count": 4,
+      "British Shorthair->Russian Blue": 1,
+      "Russian Blue->British Shorthair": 3
+    },
+    {
+      "pair": [
+        "Great Pyrenees",
+        "Samoyed"
+      ],
+      "count": 4,
+      "Great Pyrenees->Samoyed": 4,
+      "Samoyed->Great Pyrenees": 0
+    },
+    {
+      "pair": [
+        "Persian",
+        "Ragdoll"
+      ],
+      "count": 4,
+      "Persian->Ragdoll": 2,
+      "Ragdoll->Persian": 2
+    }
+  ],
+  "gradcam": {
+    "correct": {
+      "true": "English Cocker Spaniel",
+      "pred": "English Cocker Spaniel",
+      "confidence": 1.0
+    },
+    "wrong": {
+      "true": "Egyptian Mau",
+      "pred": "Bengal",
+      "confidence": 0.9952
+    }
+  }
+}
