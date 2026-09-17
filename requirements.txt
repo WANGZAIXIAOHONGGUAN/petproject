@@ -13,5 +13,6 @@ tqdm>=4.66
 matplotlib>=3.8
 pillow>=10.0
 
-# Grad-CAM 热力图（注意包名是 pytorch-grad-cam，不是 grad-cam）
-pytorch-grad-cam>=1.5
+# Grad-CAM 热力图：jacobgil/pytorch-grad-cam，本项目实测安装的是 PyPI 上的 grad-cam 1.5.7
+# （import 名称为 pytorch_grad_cam）
+grad-cam>=1.5
