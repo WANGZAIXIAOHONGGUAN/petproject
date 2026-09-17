@@ -73,7 +73,8 @@ python plot_curves.py --runs baseline label_smoothing --out results/curves.png
 ```
 
 关键参数：`--epochs`、`--batch_size`、`--lr`、`--loss {ce,ls}`、`--exp_name`、
-`--seed`、`--data_dir`、`--out`；评估脚本另有 `--ckpt`、`--name`、`--out`。
+`--seed`、`--data_dir`、`--out`、`--download/--no-download`（数据集缺失时是否自动下载，
+默认开启）；评估脚本另有 `--ckpt`、`--name`、`--out`。
 
 环境自检（答辩抽查的 Tensor 维度问题也能在这里验证）：
 
