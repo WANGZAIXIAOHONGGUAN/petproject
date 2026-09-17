@@ -65,6 +65,8 @@ def main():
     parser.add_argument('--data_dir', type=str, default='./data', help='数据集根目录')
     parser.add_argument('--seed', type=int, default=42, help='随机种子，所有对比实验保持一致')
     parser.add_argument('--out', type=str, default='logs', help='TensorBoard 日志输出目录')
+    parser.add_argument('--download', action=argparse.BooleanOptionalAction, default=True,
+                        help='数据集缺失时是否自动下载（默认开启；本地已有数据则直接使用）')
     args = parser.parse_args()
 
     torch.manual_seed(args.seed)
@@ -72,7 +74,7 @@ def main():
     print(f"使用设备: {device} | 实验名称: {args.exp_name} | 损失函数: {args.loss}")
     
     train_loader, val_loader, test_loader = get_dataloaders(
-        args.data_dir, args.batch_size, seed=args.seed
+        args.data_dir, args.batch_size, seed=args.seed, download=args.download
     )
     
     # 模型定义统一放在 models/model.py，训练和评估共用同一份实现

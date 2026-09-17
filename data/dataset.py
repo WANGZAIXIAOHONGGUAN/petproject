@@ -70,7 +70,12 @@ class _PILPassthrough:
         return image
 
 
-def _load_parts(data_dir: str, download: bool = False):
+def _load_parts(data_dir: str, download: bool = True):
+    """加载官方 trainval / test 两个 split。
+
+    download=True 时：本地已有 data/oxford-iiit-pet 就直接用，缺失才下载，
+    与任务书推荐的 ``OxfordIIITPet(root="./data", download=True)`` 一致。
+    """
     placeholder = _PILPassthrough()
     trainval = datasets.OxfordIIITPet(
         root=data_dir, split="trainval", download=download, transform=placeholder
@@ -86,6 +91,7 @@ def get_dataloaders(
     batch_size: int = 32,
     seed: int = 42,
     num_workers: int = 0,
+    download: bool = True,
     test_transform=None,
 ):
     """返回 (train_loader, val_loader, test_loader)。
@@ -98,7 +104,7 @@ def get_dataloaders(
     np.random.seed(seed)
 
     print("正在加载数据集（7349 张，首次使用需先下载/解压到 data/oxford-iiit-pet）...")
-    trainval, test_part = _load_parts(data_dir)
+    trainval, test_part = _load_parts(data_dir, download=download)
     full_dataset = ConcatDataset([trainval, test_part])
 
     # torchvision 已做 label-1，这里是 0~36；索引顺序与 _images 一致。
