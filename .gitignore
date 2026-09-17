@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# 数据集：约 800MB，不入库（首次运行 train.py 会自动下载，或按 README 手动放置）
+data/oxford-iiit-pet/
+
+# 模型权重（体积大，按需单独提交）
+*.pth
+
+# 早期实验产物（保留在本机，不入库）
+logs/_archive_old_split_3680/
+results/_archive_old_split_3680/
+
+# 编辑器 / 系统
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

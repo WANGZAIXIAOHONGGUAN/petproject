@@ -1,0 +1,17 @@
+# 运行环境：Python 3.12 + CUDA 12.6（CPU 环境去掉 +cu126 后缀即可）
+# 实测版本：torch 2.14.0+cu126 / torchvision 0.29.0+cu126
+torch>=2.4
+torchvision>=0.19
+
+# 数据划分与评估指标
+numpy>=1.26
+scikit-learn>=1.4
+
+# 训练日志与可视化
+tensorboard>=2.16
+tqdm>=4.66
+matplotlib>=3.8
+pillow>=10.0
+
+# Grad-CAM 热力图（注意包名是 pytorch-grad-cam，不是 grad-cam）
+pytorch-grad-cam>=1.5
